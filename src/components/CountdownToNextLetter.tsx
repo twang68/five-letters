@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getNextUnlockDate, getTimeUntilUnlock, LETTERS } from "@/lib/utils";
-import { isLetterUnlocked } from "@/lib/utils";
+import { getTimeUntilUnlock, isLetterUnlocked } from "@/lib/utils";
+import { LETTERS } from "@/lib/content";
 
 export default function CountdownToNextLetter() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, total: 0 });
